@@ -13,7 +13,21 @@
       "type": "image/png"
     }
   ],
+  "screenshots": [
+    {
+      "src": "screenshots/homepage.png",
+      "type": "image/png",
+      "sizes": "540x720",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshots/mobile.png",
+      "type": "image/png",
+      "sizes": "360x640"
+    }
+  ],
   "start_url": ".",
+  "scope": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
