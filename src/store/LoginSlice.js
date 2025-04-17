@@ -8,7 +8,9 @@ const {createSlice} = require('@reduxjs/toolkit') ;
 const LoginSlice = createSlice({
     name:"login",
     initialState:{
-        data:[],
+        data:{
+            authToken : "XXXXXXXX",
+        },
         status:STATUS.IDLE,
     },
     reducers:{

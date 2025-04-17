@@ -27,16 +27,16 @@ export default function DashboardAppPage() {
   const theme = useTheme();
   const navigate = useNavigate();
   const login = useSelector((state)=>state.login)
-  useEffect(() => {
-    if(!login.data.authToken){
+  // useEffect(() => {
+  //   if(!login.data.authToken){
 
-      navigate("/login")
+  //     navigate("/login")
 
-    }
-    else{
-    }
+  //   }
+  //   else{
+  //   }
 
-  }, [])
+  // }, [])
   
 
   return (
@@ -67,7 +67,7 @@ export default function DashboardAppPage() {
             <AppWidgetSummary title="Total Footstep" total={234} color="error" icon={'ion:footsteps'} />
           </Grid>
 
-          {/* <Grid item xs={12} md={6} lg={8}>
+          <Grid item xs={12} md={6} lg={8}>
             <AppWebsiteVisits
               title="Website Visits"
               subheader="(+43%) than last year"
@@ -105,7 +105,7 @@ export default function DashboardAppPage() {
                 },
               ]}
             />
-          </Grid> */}
+          </Grid>
 
           <Grid item xs={12} md={6} lg={4}>
             <AppCurrentVisits
